@@ -1,0 +1,25 @@
+.btn-large-rose {
+    background-color: transparent;
+    border-style: solid !important;
+    border-width: 1px !important;
+    color:$orange-600;
+    border-color: $orange-600;
+    transition-duration: .15s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    --text-opacity: 1;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    margin: .5rem;
+    font-size: 1.125rem;
+    height: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+    &:hover {
+        background-color: $orange-500;
+        border-color: $orange-600;
+        color: white !important;
+    }
+}
