@@ -1,5 +1,9 @@
 .testimoni {
     display: flex;
+    flex-direction: column;
+    @include for-tablet-landscape-up {
+        flex-direction: row;
+    }  
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 3rem;
@@ -10,7 +14,7 @@
             display: flex;
         }
         flex: 1 1 0%;
-        width: 100%;
+        // width: 100%;
         color: $coolGray-600;
         @include text-base();
         letter-spacing: $tracking-wide;
