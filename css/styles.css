@@ -521,8 +521,6 @@ header {
       height: 12rem; }
 
 .testimoni {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding-top: 0.5rem;
   padding-bottom: 3rem;
@@ -530,7 +528,8 @@ header {
   padding-right: 1.5rem; }
   @media (min-width: 900px) {
     .testimoni {
-      flex-direction: row; } }
+      padding-left: 12rem;
+      padding-right: 12rem; } }
   .testimoni .card-testimoni {
     flex: 1 1 0%;
     color: #4b5563;
@@ -551,10 +550,11 @@ header {
       .testimoni .card-testimoni {
         padding: 0rem; } }
     .testimoni .card-testimoni .card-testimoni-img {
-      width: 14rem;
-      height: auto;
-      border-radius: 0px;
-      object-fit: cover; }
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50rem;
+      object-fit: cover;
+      padding: 1.5rem; }
       @media (max-width: 900px) {
         .testimoni .card-testimoni .card-testimoni-img {
           border-radius: 2rem;
@@ -566,7 +566,7 @@ header {
           display: block; } }
     .testimoni .card-testimoni .card-testimoni-quotes {
       text-align: left;
-      padding: 2rem; }
+      padding: 1rem; }
       .testimoni .card-testimoni .card-testimoni-quotes .card-testimoni-by {
         font-weight: 500;
         color: #0891b2; }
@@ -576,6 +576,12 @@ header {
         font-weight: 700;
         font-size: 1.125rem;
         line-height: 1.75rem; }
+
+.slick-prev:before {
+  color: #06b6d4 !important; }
+
+.slick-next::before {
+  color: #06b6d4 !important; }
 
 footer {
   display: grid;

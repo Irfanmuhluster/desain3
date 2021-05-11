@@ -1,14 +1,18 @@
 .testimoni {
-    display: flex;
-    flex-direction: column;
-    @include for-tablet-landscape-up {
-        flex-direction: row;
-    }  
+    // display: flex;
+    // flex-direction: column;
+    // @include for-tablet-landscape-up {
+    //     flex-direction: row;
+    // }  
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    @include for-tablet-landscape-up {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
     .card-testimoni {
         @include for-tablet-landscape-up {
             display: flex;
@@ -29,10 +33,11 @@
             padding: 0rem;
         }
         .card-testimoni-img {
-            width: 14rem;
-            height: auto;
-            border-radius: 0px;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50rem;
             object-fit: cover;
+            padding: 1.5rem;
             @include max-table-down {
                 border-radius: 2rem;
                 width: 18rem;
@@ -45,7 +50,7 @@
         }
         .card-testimoni-quotes {
             text-align: left;
-            padding: 2rem;
+            padding: 1rem;
             .card-testimoni-by {
                 font-weight: $font-medium;
                 color: $cyan-600;
@@ -62,3 +67,10 @@
     }
 }
 
+.slick-prev:before {
+    color: #06b6d4 !important;
+}
+
+.slick-next::before {
+    color: #06b6d4 !important;
+}

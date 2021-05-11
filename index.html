@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel='stylesheet' id='slick-css' href='vendor/slick/slick.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='slick-theme-css' href='vendor/slick/slick-theme.css' type='text/css' media='all' />
     <title>Desain 3</title>
 </head>
 <body>
@@ -116,7 +118,7 @@
                         </div>
                     </div>
                     <div class="service-title">Mobile</div>
-                    <p>“Bila jenuh kesini, bila ada kerjaan kesini , enak untuk kerja enak untuk santai”</p>
+                    <p>“Kami berkomitmen menyediakan aplikasi seluler berkualitas terbaik yang dirancang khusus untuk memenuhi kebutuhan Anda.”</p>
                 </div>
                 <div class="service-box">
                     <div class="icon">
@@ -127,7 +129,7 @@
                         </div>
                     </div>
                     <div class="service-title">Domain</div>
-                    <p>" Lingkungan kerja nyaman, jadi betah "</p>
+                    <p>" Kami dapat membantu Anda mengelola iklan, media sosial, dan konten web untuk meningkatkan lalu lintas ke situs web Anda."</p>
                 </div>
                 <div class="service-box">
                     <div class="icon"> 
@@ -138,7 +140,7 @@
                         </div>
                     </div>
                     <div class="service-title">Website</div>
-                    <p>" Lingkungan kerja nyaman, cocok untuk bekerja tim seharian" </p>
+                    <p>"Kami berkomitmen  menciptakan produk berkualitas tinggi dari situs web dasar hingga skala besar yang dirancang khusus untuk memenuhi kebutuhan Anda." </p>
                 </div>
             </div>
         </div>
@@ -247,39 +249,46 @@
         </div>
         <div class="container">
             <div class="heading">Testimonial</div>
+            
             <div class="testimoni">
-            <figure class="card-testimoni">
-                <img class="card-testimoni-img" src="images/depositphotos_12185281-stock-photo-happy-smart-business-man.jpg" alt="" width="384" height="512" loading="lazy" class="lazyload">
-                <div class="card-testimoni-quotes">
-                    <p>
-                      “konfederalisme demokratis membela "jenis organisasi atau administrasi dapat disebut administrasi politik non-negara atau demokrasi tanpa negara ”
-                    </p>
-                  <figcaption class="card-testimoni-by">
-                    <div class="text-cyan-600">
-                      Sarah Dayan
+                <div id="slider-testimoni" class="slider">
+                    <div>
+                        <figure class="card-testimoni">
+                            <img class="card-testimoni-img" src="images/depositphotos_12185281-stock-photo-happy-smart-business-man.jpg" alt="" width="384" height="512" loading="lazy" class="lazyload">
+                            <div class="card-testimoni-quotes">
+                                <p>
+                                “konfederalisme demokratis membela "jenis organisasi atau administrasi dapat disebut administrasi politik non-negara atau demokrasi tanpa negara ”
+                                </p>
+                            <figcaption class="card-testimoni-by">
+                                <div class="text-cyan-600">
+                                Sarah Dayan
+                                </div>
+                                <div class="card-testimoni-level">
+                                Staff Engineer, Algolia
+                                </div>
+                            </figcaption>
+                            </div>
+                        </figure>
                     </div>
-                    <div class="card-testimoni-level">
-                      Staff Engineer, Algolia
+                    <div>
+                        <figure class="card-testimoni">
+                            <img class="card-testimoni-img" src="images/person_flat.jpg" alt="" width="384" height="512" loading="lazy" class="lazyload">
+                            <div class="card-testimoni-quotes">
+                                <p>
+                                “Mantap
+                                </p>
+                            <figcaption class="card-testimoni-by">
+                                <div class="text-cyan-600">
+                                Sarah Dayan
+                                </div>
+                                <div class="card-testimoni-level">
+                                Staff Engineer, Algolia
+                                </div>
+                            </figcaption>
+                            </div>
+                        </figure>
                     </div>
-                  </figcaption>
                 </div>
-            </figure>
-            <figure class="card-testimoni">
-                <img class="card-testimoni-img" src="images/person_flat.jpg" alt="" width="384" height="512" loading="lazy" class="lazyload">
-                <div class="card-testimoni-quotes">
-                    <p>
-                      “Mantap
-                    </p>
-                  <figcaption class="card-testimoni-by">
-                    <div class="text-cyan-600">
-                      Sarah Dayan
-                    </div>
-                    <div class="card-testimoni-level">
-                      Staff Engineer, Algolia
-                    </div>
-                  </figcaption>
-                </div>
-            </figure>
             </div>
         </div>
         <div class="container bg-color-white">
@@ -300,6 +309,11 @@
                 <div class="form-group">
                     <label>Pesan Anda</label>
                     <textarea rows="7" name="message" class="input-regular" id="" placeholder="Pesan anda"></textarea>
+                </div>
+                <div class="text-right">
+                    <div class="btn-large-rose">
+                        Submit
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,7 +387,21 @@
     <div class="copyright">
         <p>Copyright 2020  Irvan.dev - All Rights Reserved</p>
     </div>
-    
-<script  type="text/javascript" src="./js/app.js"></script>        
-</body>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script  type="text/javascript" src="./js/app.js"></script>
+
+    <script type='text/javascript' src='vendor/slick/slick.min.js' id='slick-js-js'></script>
+    </body>
+    <script>
+        $('.slider').slick({
+            // dots: true,
+            infinite: true,
+            speed: 300,
+            arrows: true,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true
+        });
+</script>
 </html>
