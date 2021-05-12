@@ -5,7 +5,11 @@
         grid-template-columns: repeat(4, 1fr);
     }   
     grid-gap: 2rem;
-    padding: 3rem;
+    @include for-tablet-landscape-up {
+        padding: 3rem;
+    }
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 0;
     .box {
         .img-box {

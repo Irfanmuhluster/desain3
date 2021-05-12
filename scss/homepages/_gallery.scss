@@ -3,7 +3,11 @@
 }
 
 .gallery {
-    padding: 3rem;
+    @include for-tablet-landscape-up {    
+        padding: 3rem;
+    }
+    padding-left: 1rem;
+    padding-right: 1rem;
     .gallery-box {
         display: inline-block;
         margin: 0.25rem;

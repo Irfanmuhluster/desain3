@@ -363,13 +363,17 @@ header {
   width: 100%;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #f9fafb;
   bottom: auto; }
   @media (min-width: 900px) {
     .service {
       flex-direction: row; } }
+  @media (min-width: 900px) {
+    .service {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
   .service .service-box {
     flex: 1 1 0%;
     width: 100%;
@@ -379,10 +383,13 @@ header {
     background-color: white;
     text-align: left;
     padding: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-right: 1rem;
     margin-bottom: 1.5rem;
     color: #1f2937; }
+    @media (min-width: 900px) {
+      .service .service-box {
+        margin-left: 1rem; } }
     .service .service-box .icon {
       display: flex;
       justify-content: center;
@@ -414,11 +421,15 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  padding: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 0; }
   @media (min-width: 900px) {
     .news {
       grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 900px) {
+    .news {
+      padding: 3rem; } }
   .news .box .img-box {
     border-radius: 0.375rem;
     object-fit: cover;
@@ -448,13 +459,17 @@ header {
   width: 100%;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #f9fafb;
   bottom: auto; }
   @media (min-width: 900px) {
     .agenda {
       flex-direction: row; } }
+  @media (min-width: 900px) {
+    .agenda {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
   .agenda .agenda-box {
     flex: 1 1 0%;
     width: 100%;
@@ -463,9 +478,12 @@ header {
     border-radius: 0.375rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-right: 1rem;
     margin-bottom: 1.5rem; }
+    @media (min-width: 900px) {
+      .agenda .agenda-box {
+        margin-left: 1rem; } }
     .agenda .agenda-box .date {
       margin-left: 0.5rem;
       margin-top: 0.5rem;
@@ -505,7 +523,11 @@ header {
   background-color: white; }
 
 .gallery {
-  padding: 3rem; }
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 900px) {
+    .gallery {
+      padding: 3rem; } }
   .gallery .gallery-box {
     display: inline-block;
     margin: 0.25rem;
@@ -557,7 +579,6 @@ header {
       padding: 1.5rem; }
       @media (max-width: 900px) {
         .testimoni .card-testimoni .card-testimoni-img {
-          border-radius: 2rem;
           width: 18rem;
           height: 18rem;
           padding: 1.5rem;
