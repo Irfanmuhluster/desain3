@@ -3,7 +3,7 @@
 .btn-large-rose {
   background-color: transparent;
   border-style: solid !important;
-  border-width: 1px !important;
+  border-width: 2px !important;
   color: #ea580c;
   border-color: #ea580c;
   transition-duration: .15s;
@@ -660,7 +660,10 @@ header {
       color: #4b5563; }
 
 .contact {
-  padding: 3rem; }
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 6rem;
+  padding-left: 6rem; }
 
 .gallery-container {
   background-color: white; }
