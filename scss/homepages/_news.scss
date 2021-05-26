@@ -2,11 +2,12 @@
     display: grid;
     grid-template-columns: 1fr;
     @include for-tablet-landscape-up {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }   
     grid-gap: 2rem;
     @include for-tablet-landscape-up {
-        padding: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     padding-left: 1rem;
     padding-right: 1rem;
@@ -24,7 +25,7 @@
         .title {
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: $gray-700;
+            color: #002147;
             @include text-lg();
         }
         .credit {

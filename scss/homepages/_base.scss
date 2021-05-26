@@ -149,10 +149,9 @@ input:focus, button:focus, textarea:focus {
 }
 
 .heading {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;
-    color: #f59e0b;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #002147;
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -168,6 +167,13 @@ input:focus, button:focus, textarea:focus {
         margin-top: 1%;
         width: 5%;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0;
 }
 
 .text-center {
@@ -244,6 +250,14 @@ input:focus, button:focus, textarea:focus {
 
 .padding-top-1 {
     padding-top: 1rem;
+}
+
+.padding-top-3 {
+    padding-top: 3rem;
+}
+
+.padding-battom-3 {
+    padding-bottom: 3rem;
 }
 
 .padding-top-1setengah {
